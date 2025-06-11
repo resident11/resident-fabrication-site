@@ -1,112 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resident Fabrication Investments</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #333;
-      background-color: #f4f4f4;
-    }
-    header {
-      background: url('https://static.wixstatic.com/media/11062b_7cf6e6d194e7415fa7e53a47690a4eaf~mv2.jpg/v1/fill/w_1903,h_709,al_c,q_85,usm_0.66_1.00_0.01/11062b_7cf6e6d194e7415fa7e53a47690a4eaf~mv2.jpg') center/cover no-repeat;
-      height: 60vh;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 3em;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-      background-color: white;
-      margin-bottom: 20px;
-      border-radius: 8px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #004080;
-      color: white;
-      border: none;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #004080;
-      color: white;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 15px;
-      margin-top: 20px;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 8px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Resident Fabrication Investments</h1>
+    <div class="logo">
+      <img src="images/logo.png" alt="Resident Fabrication Investments Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
+
+  <section id="home">
+    <div class="hero">
+      <h1>Expert Welding & Metal Fabrication Solutions</h1>
+      <p>Delivering quality fabrication work from Burnside, Bulawayo — fast, reliable, and precise.</p>
+    </div>
+  </section>
 
   <section id="about">
     <h2>About Us</h2>
-    <p>
-      Based in Bulawayo, Resident Fabrication Investments offers expert welding and fabrication services.
-      With years of experience and a commitment to quality, we provide structural steel, gates, fencing,
-      and custom metal projects to suit your residential and commercial needs.
-    </p>
+    <p>Resident Fabrication Investments is a trusted welding and metal fabrication company based in Burnside, Bulawayo. Our commitment to quality workmanship and customer satisfaction sets us apart in the industry.</p>
   </section>
 
   <section id="services">
     <h2>Our Services</h2>
     <ul>
-      <li>Welding and custom fabrication</li>
-      <li>Steel structure design and construction</li>
-      <li>Security gates, panels, and fencing</li>
-      <li>Repairs and refurbishments</li>
+      <li><strong>Boundary Solutions:</strong> Sliding, Electric, and Swing Gates; Gate Repair & Refurbishment; Palisade Fences; Perimeter Steel Bar Fences</li>
+      <li><strong>Security Solutions:</strong> Burglar Bars & Screens; Custom-Made Cages; Razor Wire; Electric Fencing; Steel Spikes</li>
+      <li><strong>Parking Solutions:</strong> Garage Doors (Supply, Install, Repair, Automation); Parking Shades</li>
+      <li><strong>Industrial & Structural Steel:</strong> Fabrication, Installation, Repairs of Steam Lines, Steel Tanks, Structures, Aluminium and Stainless Steel Welding</li>
+      <li><strong>Aluminium & Glass Solutions:</strong> Aluminium Windows, Doors, Partitions, and Decorative Elements</li>
     </ul>
   </section>
 
   <section id="gallery">
-    <h2>Our Work</h2>
-    <div class="gallery">
-      <img src="https://static.wixstatic.com/media/11062b_e3e2de6dbcb847ecb9f723c694ce160f~mv2.jpg" alt="Steel gate" />
-      <img src="https://static.wixstatic.com/media/11062b_e5e1a8ad837b40a39d8881673401106b~mv2.jpg" alt="Metal work" />
-      <img src="https://static.wixstatic.com/media/11062b_4bba08a23106428b93b2433c39f9d3a7~mv2.jpg" alt="Fence structure" />
-      <img src="https://static.wixstatic.com/media/11062b_eb624d509d0142d5b0d2706c44561748~mv2.jpg" alt="Welding job" />
-      <img src="https://static.wixstatic.com/media/11062b_58fd25ac06fc41718bc7ed22f241cb40~mv2.jpg" alt="Gate install" />
-      <img src="https://static.wixstatic.com/media/11062b_96d2d1c16749498e91d4c8edab12640a~mv2.jpg" alt="Metal fabrication" />
+    <h2>Gallery</h2>
+    <p>Take a look at some of our recent projects. We take pride in delivering visually appealing and structurally sound results.</p>
+    <div class="gallery-grid">
+      <img src="images/gallery1.jpg" alt="Welding Project 1">
+      <img src="images/gallery2.jpg" alt="Sliding Gate">
+      <img src="images/gallery3.jpg" alt="Garage Door Installation">
+      <!-- Add more images as needed -->
     </div>
   </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <p><strong>Location:</strong> 11 Valley Road, Burnside, Bulawayo</p>
-    <p><strong>Phone:</strong> +263 779 906 938 / +263 715 922 904</p>
-    <p><strong>Email:</strong> <a href="mailto:bmatobo2@gmail.com">bmatobo2@gmail.com</a></p>
-    <a class="btn" href="https://wa.me/263779906938" target="_blank">Message us on WhatsApp</a>
-    <a class="btn" href="https://www.facebook.com/share/1Xs9pPPwwu/?mibextid=qi2Omg" target="_blank">Visit our Facebook Page</a>
+    <p>Let’s discuss your next project or request a quote today:</p>
+    <ul>
+      <li>📞 Phone 1: <a href="tel:+263779906938">+263 779 906 938</a></li>
+      <li>📞 Phone 2: <a href="tel:+263715922904">+263 715 922 904</a></li>
+      <li>📧 Email: <a href="mailto:bmatobo2@gmail.com">bmatobo2@gmail.com</a></li>
+      <li>📍 Address: 11 Valley Road, Burnside, Bulawayo</li>
+    </ul>
+    <p>Business Hours: Monday – Saturday, 8:00 AM – 5:00 PM</p>
   </section>
 
   <footer>
-    &copy; 2025 Resident Fabrication Investments. Built to last.
+    <p>&copy; 2025 Resident Fabrication Investments. All rights reserved.</p>
   </footer>
 </body>
 </html>
